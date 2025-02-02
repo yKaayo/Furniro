@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* Google Fonts */
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* Colors */
+  --color-primary-yellow: #b88e2f;
+  --color-secundary-yellow: #fff3e3;
+
+  /* Font */
+  --default-font-family: 'Poppins', 'sans-serif'
+}
+
+/* Header */
+.nav__link {
+  @apply border-primary-yellow pb-1 relative border-b-0 after:duration-500 after:absolute after:h-1 after:bg-primary-yellow after:w-0 hover:after:w-[80%] after:rounded-full after:bottom-0 after:left-0;
+}
+/* Header - End */
+
+/* Hero */
+.btn--yellow {
+  @apply bg-primary-yellow border-primary-yellow hover:text-primary-yellow border-2 font-bold text-white duration-300 hover:bg-transparent;
+}
+/* Hero - End */
