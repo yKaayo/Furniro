@@ -1,18 +1,25 @@
 import { useState } from "react";
 import logo from "../../public/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NavLink, Link } from "react-router";
 
 const Header = () => {
   const [showNavBar, setShowNavBar] = useState(false);
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "Shop", path: "/shop" },
+    { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
+  ];
 
   return (
-    <header className="bg-white px-5 fixed w-full">
+    <header className="fixed w-full bg-white px-5">
       <div className="relative container mx-auto flex h-20 flex-wrap items-center justify-between md:flex-nowrap">
         <h1>
-          <a className="flex items-center text-2xl font-bold" href="#">
+          <Link className="flex items-center text-2xl font-bold" to='/'>
             <img className="mr-2" src={logo} alt="Website Logo" />
             Furniro
-          </a>
+          </Link>
         </h1>
 
         <button
@@ -32,18 +39,16 @@ const Header = () => {
         >
           <nav className="relative md:mx-auto">
             <ul className="flex flex-col justify-center gap-10 font-semibold md:flex-row">
-              <li>
-                <a className="nav__link" href="">Home</a>
-              </li>
-              <li>
-                <a className="nav__link" href="">Shop</a>
-              </li>
-              <li>
-                <a className="nav__link" href="">About</a>
-              </li>
-              <li>
-                <a className="nav__link" href="">Contact</a>
-              </li>
+              {navLinks.map((link) => (
+                <li key={link.path}>
+                  <NavLink
+                    className={`nav__link ${({ isActive }) => (isActive ? "active" : "")}`}
+                    to={link.path}
+                  >
+                    {link.name}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </nav>
 

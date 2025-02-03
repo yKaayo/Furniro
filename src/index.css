@@ -31,13 +31,18 @@
   --color-secundary-yellow: #fff3e3;
 
   /* Font */
-  --default-font-family: 'Poppins', 'sans-serif'
+  --default-font-family: "Poppins", "sans-serif";
 }
 
 /* Header */
 .nav__link {
-  @apply border-primary-yellow pb-1 relative border-b-0 after:duration-500 after:absolute after:h-1 after:bg-primary-yellow after:w-0 hover:after:w-[80%] after:rounded-full after:bottom-0 after:left-0;
+  @apply border-primary-yellow after:bg-primary-yellow relative border-b-0 pb-1 after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:rounded-full after:duration-500 hover:after:w-[40%];
 }
+
+.nav__link.active {
+  @apply after:w-full;
+}
+
 /* Header - End */
 
 /* Hero */
