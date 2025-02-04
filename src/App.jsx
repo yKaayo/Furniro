@@ -4,6 +4,9 @@ import {
   faCartShopping,
   faBarsStaggered,
   faMagnifyingGlass,
+  faLocationDot,
+  faPhone,
+  faClock
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter, Routes, Route } from "react-router";
 import Home from "./pages/Home";
@@ -12,7 +15,15 @@ import About from "./pages/About";
 import MainLayout from "./layout/MainLayout";
 import Contact from "./pages/Contact";
 
-library.add(faHeart, faCartShopping, faBarsStaggered, faMagnifyingGlass);
+library.add(
+  faHeart,
+  faCartShopping,
+  faBarsStaggered,
+  faMagnifyingGlass,
+  faLocationDot,
+  faPhone,
+  faClock,
+);
 
 function App() {
   return (
