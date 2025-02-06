@@ -50,3 +50,9 @@
   @apply bg-primary-yellow border-primary-yellow hover:text-primary-yellow border-2 font-bold text-white duration-300 hover:bg-transparent;
 }
 /* Hero - End */
+
+/* Footer */
+.footer__link {
+  @apply hover:text-primary-yellow duration-300
+}
+/* Footer - End */

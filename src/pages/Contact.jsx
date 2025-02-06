@@ -6,18 +6,22 @@ const Contact = () => {
     {
       label: "Your Name",
       placeholder: "Abc",
+      type: "text",
     },
     {
       label: "Email Adress",
       placeholder: "email@email.com",
+      type: "email",
     },
     {
       label: "Subject",
       placeholder: "This is an optional",
+      type: "text",
     },
     {
       label: "Message",
       placeholder: "Hi! i’d like to ask about",
+      type: "text",
     },
   ];
 
@@ -25,7 +29,10 @@ const Contact = () => {
     {
       icon: <FontAwesomeIcon icon="fa-solid fa-location-dot" />,
       title: "Adress",
-      text: "236 5th SE Avenue, New York NY10000, United States",
+      text: {
+        firstText: "236 5th SE Avenue, New York",
+        secondText: "NY10000, United States",
+      },
     },
     {
       icon: <FontAwesomeIcon icon="fa-solid fa-phone" />,
@@ -49,51 +56,51 @@ const Contact = () => {
     <section className="bg-white">
       <SectionBg name="Contact" />
 
-      <div className="container mx-auto flex flex-col items-center text-center text-balance">
+      <div className="container mx-auto my-20 flex flex-col items-center text-center text-balance">
         <h3 className="text-3xl font-semibold">Get In Touch With Us</h3>
-        <p className="w-[80%]">
+        <p className="w-[80%] mt-3">
           For More Information About Our Product & Services. Please Feel Free To
           Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not
           Hesitate!
         </p>
 
-        <div className="my-20 grid grid-cols-2 gap-10">
-          <div className="flex flex-col gap-5">
+        <div className="mt-20 grid w-full grid-cols-1 gap-20 px-5 sm:grid-cols-2 md:px-10">
+          <div className="order-2 flex flex-col items-center gap-10 sm:order-1 sm:items-start">
             {contactData.map((data) => (
               <div
-                className="grid grid-cols-[repeat(2,fit-content)] justify-start gap-x-2 text-start"
+                className="grid grid-cols-[repeat(2,fit-content)] justify-center gap-x-2 text-start"
                 key={data.title}
               >
                 {data.icon}
                 <h4 className="font-semibold">{data.title}</h4>
-                {typeof data.text === "string" ? (
-                  <p className="col-start-2 text-balance">{data.text}</p>
-                ) : (
-                  <div className="col-start-2 text-balance">
-                    <p>{data.text.firstText}</p>
-                    <p>{data.text.secondText}</p>
-                  </div>
-                )}
+
+                <div className="col-start-2 text-balance">
+                  <p>{data.text.firstText}</p>
+                  <p>{data.text.secondText}</p>
+                </div>
               </div>
             ))}
           </div>
 
           <form
-            className="flex flex-col items-start gap-8"
+            className="order-1 flex flex-col items-center gap-8 sm:items-start"
             onSubmit={(e) => e.preventDefault()}
           >
             {formData.map((data) => (
-              <div className="flex flex-col items-start" key={data.label}>
+              <div
+                className="flex w-full flex-col items-start"
+                key={data.label}
+              >
                 <label className="font-semibold">{data.label}</label>
                 <input
-                  className="rounded-2xl border-2 border-gray-500 p-5"
-                  type="text"
+                  className="w-full rounded-2xl border-2 border-gray-500 p-5"
+                  type={data.type}
                   placeholder={data.placeholder}
                 />
               </div>
             ))}
 
-            <button className="btn--yellow">Submit</button>
+            <button className="btn--yellow px-8 py-4">Submit</button>
           </form>
         </div>
       </div>
