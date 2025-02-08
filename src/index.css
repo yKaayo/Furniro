@@ -53,6 +53,6 @@
 
 /* Footer */
 .footer__link {
-  @apply hover:text-primary-yellow duration-300
+  @apply hover:text-primary-yellow duration-300;
 }
 /* Footer - End */

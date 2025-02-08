@@ -16,7 +16,7 @@ const Header = () => {
     <header className="fixed w-full bg-white px-5">
       <div className="relative container mx-auto flex h-20 flex-wrap items-center justify-between md:flex-nowrap">
         <h1>
-          <Link className="flex items-center text-2xl font-bold" to='/'>
+          <Link className="flex items-center text-2xl font-bold" to="/">
             <img className="mr-2" src={logo} alt="Website Logo" />
             Furniro
           </Link>

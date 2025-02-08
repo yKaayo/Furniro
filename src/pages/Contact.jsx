@@ -58,7 +58,7 @@ const Contact = () => {
 
       <div className="container mx-auto my-20 flex flex-col items-center text-center text-balance">
         <h3 className="text-3xl font-semibold">Get In Touch With Us</h3>
-        <p className="w-[80%] mt-3">
+        <p className="mt-3 w-[80%]">
           For More Information About Our Product & Services. Please Feel Free To
           Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not
           Hesitate!
@@ -100,7 +100,9 @@ const Contact = () => {
               </div>
             ))}
 
-            <button className="btn--yellow px-8 py-4">Submit</button>
+            <button className="btn--yellow rounded-xl px-20 py-3">
+              Submit
+            </button>
           </form>
         </div>
       </div>

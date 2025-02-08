@@ -6,7 +6,7 @@ import {
   faMagnifyingGlass,
   faLocationDot,
   faPhone,
-  faClock
+  faClock,
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter, Routes, Route } from "react-router";
 import Home from "./pages/Home";

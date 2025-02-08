@@ -5,10 +5,13 @@ const SectionBg = (props) => {
   return (
     <div
       style={{ backgroundImage: `url(${SectionBgImg})` }}
-      className="flex flex-col justify-center items-center gap-3 pt-20 h-[90svh] bg-cover"
+      className="flex h-[90svh] flex-col items-center justify-center gap-3 bg-cover pt-20"
     >
       <h2 className="text-4xl font-semibold">{props.name}</h2>
-      <p className="font-semibold"><span className="me-1">Home</span> &gt; <span className="ms-1 font-normal">{props.name}</span></p>
+      <p className="font-semibold">
+        <span className="me-1">Home</span> &gt;{" "}
+        <span className="ms-1 font-normal">{props.name}</span>
+      </p>
     </div>
   );
 };
