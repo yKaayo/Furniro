@@ -8,7 +8,7 @@ const Header = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Shop", path: "/shop" },
-    { name: "About", path: "/about" },
+    { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -64,9 +64,9 @@ const Header = () => {
               </button>
             </li>
             <li>
-              <button>
+              <Link to={'cart'}>
                 <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
-              </button>
+              </Link>
             </li>
           </ul>
         </div>

@@ -1,3 +1,4 @@
+import ConfidenceBanner from "../components/ConfidenceBanner";
 import SectionBg from "../components/SectionBg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -106,6 +107,8 @@ const Contact = () => {
           </form>
         </div>
       </div>
+
+      <ConfidenceBanner />
     </section>
   );
 };

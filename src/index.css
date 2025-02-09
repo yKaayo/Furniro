@@ -30,8 +30,9 @@
   --color-primary-yellow: #b88e2f;
   --color-secundary-yellow: #fff3e3;
 
-  /* Font */
-  --default-font-family: "Poppins", "sans-serif";
+  --color-secundary-white: #faf3ea ;
+  
+  /* Font */ --default-font-family: "Poppins", "sans-serif";
 }
 
 /* Header */
