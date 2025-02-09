@@ -13,7 +13,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed w-full bg-white px-5">
+    <header className="fixed w-full bg-white px-5 z-[5]">
       <div className="relative container mx-auto flex h-20 flex-wrap items-center justify-between md:flex-nowrap">
         <h1>
           <Link className="flex items-center text-2xl font-bold" to="/">

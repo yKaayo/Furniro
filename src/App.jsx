@@ -14,6 +14,7 @@ import Shop from "./pages/Shop";
 import About from "./pages/About";
 import MainLayout from "./layout/MainLayout";
 import Contact from "./pages/Contact";
+import Product from "./layout/Product";
 
 library.add(
   faHeart,
@@ -31,10 +32,14 @@ function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route index element={<Home />} />
-          <Route path="shop" element={<Shop />} />
+          <Route path="shop">
+            <Route index element={<Shop />} />
+            <Route path=":id" element={<Product />} />
+          </Route>
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
         </Route>
+
         <Route path="*" element={<p>404</p>} />
       </Routes>
     </BrowserRouter>
