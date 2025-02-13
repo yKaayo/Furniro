@@ -30,10 +30,21 @@
   --color-primary-yellow: #b88e2f;
   --color-secundary-yellow: #fff3e3;
 
-  --color-secundary-white: #faf3ea ;
-  
-  /* Font */ --default-font-family: "Poppins", "sans-serif";
+  --color-secundary-white: #faf3ea;
+
+  /* Font */
+  --default-font-family: "Poppins", "sans-serif";
 }
+
+/* Variable */
+.btn--yellow {
+  @apply bg-primary-yellow border-primary-yellow hover:text-primary-yellow border-2 font-bold text-white duration-300 hover:bg-transparent;
+}
+
+.btn__outline--black {
+  @apply rounded-lg border-2 border-black bg-transparent px-5 py-2 text-black hover:bg-black hover:text-white duration-300;
+}
+/* Variable - End */
 
 /* Header */
 .nav__link {
@@ -43,14 +54,7 @@
 .nav__link.active {
   @apply after:w-full;
 }
-
 /* Header - End */
-
-/* Hero */
-.btn--yellow {
-  @apply bg-primary-yellow border-primary-yellow hover:text-primary-yellow border-2 font-bold text-white duration-300 hover:bg-transparent;
-}
-/* Hero - End */
 
 /* Footer */
 .footer__link {

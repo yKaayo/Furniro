@@ -37,7 +37,7 @@ const ProductItem = ({ product }) => {
             state={product}
             className="btn--yellow px-5 py-2"
           >
-            Add to cart
+            Show product
           </Link>
         </div>
       )}
