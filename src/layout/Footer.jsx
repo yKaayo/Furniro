@@ -52,13 +52,16 @@ const Footer = () => {
         <div className="flex flex-col items-center gap-5 font-semibold sm:items-start">
           <h3 className="text-gray-600">Newsletter</h3>
 
-          <form className="flex lg:flex-col xl:flex-row gap-3" onSubmit={(e) => e.preventDefault()}>
+          <form
+            className="flex flex-col sm:flex-row gap-3 lg:flex-col xl:flex-row"
+            onSubmit={(e) => e.preventDefault()}
+          >
             <input
               className="border-b-2 border-gray-400"
               type="email"
               placeholder="Enter Your Email Adress"
             />
-            <button className="cursor-pointer border-b-2 border-gray-400 w-fit mx-auto">
+            <button className="mx-auto w-fit cursor-pointer border-b-2 border-gray-400">
               Subscribe
             </button>
           </form>

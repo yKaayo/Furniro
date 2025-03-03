@@ -36,6 +36,10 @@
   --default-font-family: "Poppins", "sans-serif";
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* Variable */
 .btn--yellow {
   @apply bg-primary-yellow border-primary-yellow hover:text-primary-yellow border-2 font-bold text-white duration-300 hover:bg-transparent;

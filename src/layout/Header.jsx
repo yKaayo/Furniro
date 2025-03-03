@@ -35,10 +35,10 @@ const Header = () => {
         <div
           className={`w-full ${
             !showNavBar && window.innerWidth < 768 ? "hidden" : "flex"
-          } md:rounded-n4 bg-secundary-yellow absolute top-[70px] flex-col gap-8 rounded-lg p-5 shadow-xl md:static md:flex-row md:justify-between md:bg-transparent md:p-0 md:shadow-none`}
+          }  bg-secundary-yellow absolute top-20 flex-col gap-8 rounded-lg p-5 shadow-xl md:static md:flex-row md:justify-between md:bg-transparent md:p-0 md:shadow-none`}
         >
-          <nav className="relative md:mx-auto">
-            <ul className="flex flex-col justify-center gap-10 font-semibold md:flex-row">
+          <nav className="relative md:mx-auto ">
+            <ul className="flex flex-col justify-center gap-10 font-semibold md:flex-row ">
               {navLinks.map((link) => (
                 <li key={link.path}>
                   <NavLink
