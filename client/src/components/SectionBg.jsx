@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import SectionBgImg from "../assets/img/section-bg.webp";
 
 const SectionBg = (props) => {
@@ -9,7 +8,7 @@ const SectionBg = (props) => {
     >
       <h2 className="text-4xl font-semibold">{props.name}</h2>
       <p className="font-semibold">
-        <span className="me-1">Home</span> &gt;{" "}
+        <span className="me-1">Home</span>
         <span className="ms-1 font-normal">{props.name}</span>
       </p>
     </div>

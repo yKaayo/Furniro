@@ -6,7 +6,7 @@ const Hero = () => {
       style={{ backgroundImage: `url(${heroBgImg})` }}
       className="bg-cover bg-[35%_100%]"
     >
-      <div className="container mx-auto grid h-[90svh] grid-cols-1 items-center justify-center pt-20 px-5 md:grid-cols-2">
+      <div className="container mx-auto grid h-[90svh] grid-cols-1 items-center justify-center px-5 pt-20 md:grid-cols-2">
         <div className="bg-secundary-yellow/80 col-start-2 flex flex-col items-start gap-3 p-10">
           <p>New Arrival</p>
           <h2 className="text-primary-yellow text-4xl font-semibold">

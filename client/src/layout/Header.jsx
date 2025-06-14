@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../public/logo.svg";
+import logo from "/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink, Link } from "react-router";
 
