@@ -106,7 +106,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-      </div>n
+      </div>
 
       <ConfidenceBanner />
     </section>

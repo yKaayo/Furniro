@@ -1,3 +1,14 @@
+// Models
+import ProductModel from "../models/ProductModels.js";
+
+ProductModel.create({
+  name: "Cama",
+  price: 229,
+  description: "Cama de casal",
+})
+  .then((data) => console.log(data))
+  .catch((e) => console.log(e));
+
 export const getProducts = () => {
   return { message: "Produtos route working!" };
 };
